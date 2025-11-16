@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Enhanced SEO Meta Tags -->
+  <title>Timeboxer - Smart Timebox Planner & Time Management App</title>
+  <meta name="description" content="Boost productivity with Timeboxer, the smart timebox planner inspired by Harvard's proven time management method. Plan, track, and optimize your daily schedule with intelligent timeboxing.">
+  <meta name="keywords" content="timeboxing, time management, productivity app, timebox planner, schedule planner, time blocking, focus timer, productivity tool, task management, Harvard time management">
+  <meta name="author" content="Prontera">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="en">
+  
+  <!-- Open Graph Meta Tags for Social Media -->
+  <meta property="og:title" content="Timeboxer - Smart Timebox Planner & Time Management App">
+  <meta property="og:description" content="Master your time with Timeboxer's intelligent timeboxing system. The productivity app that helps you plan, focus, and achieve more using Harvard's proven time management method.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://timeboxer.app">
+  <meta property="og:image" content="https://timeboxer.app/assets/assets/images/timeboxer_logo_v2.png">
+  <meta property="og:image:alt" content="Timeboxer - Smart Timebox Planner Logo">
+  <meta property="og:site_name" content="Timeboxer">
+  <meta property="og:locale" content="en_US">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Timeboxer - Smart Timebox Planner & Time Management App">
+  <meta name="twitter:description" content="Master your time with Timeboxer's intelligent timeboxing system. The productivity app that helps you plan, focus, and achieve more.">
+  <meta name="twitter:image" content="https://timeboxer.app/assets/assets/images/timeboxer_logo_v2.png">
+  <meta name="twitter:image:alt" content="Timeboxer - Smart Timebox Planner Logo">
+  
+  <!-- Additional SEO Meta Tags -->
+  <meta name="application-name" content="Timeboxer">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-config" content="browserconfig.xml">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://timeboxer.app">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#FFFFFF">
+  <meta name="apple-mobile-web-app-title" content="Timeboxer">
+  <link rel="apple-touch-icon" href="assets/assets/images/timeboxer_favicon_v2.svg">
+
+  <!-- Material Icons font -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/assets/images/timeboxer_favicon_v2.svg"/>
+  <link rel="shortcut icon" type="image/svg+xml" href="assets/assets/images/timeboxer_favicon_v2.svg"/>
+
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Structured Data for Search Engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Timeboxer",
+    "alternateName": "Smart Timebox Planner",
+    "description": "Boost productivity with Timeboxer, the smart timebox planner inspired by Harvard's proven time management method. Plan, track, and optimize your daily schedule with intelligent timeboxing.",
+    "url": "https://timeboxer.app",
+    "applicationCategory": "ProductivityApplication",
+    "operatingSystem": "iOS, Android, Web",
+    "offers": {
+      "@type": "Offer",
+      "price": "5.99",
+      "priceCurrency": "USD",
+      "priceValidUntil": "2025-12-31"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "ratingCount": "1250"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "Studio Prontera"
+    }
+  }
+  </script>
+
+  <style>
+    /* iOS Safari 관련 스타일 */
+    html {
+      background-color: #FFFFFF;
+    }
+    
+    body {
+      font-family: 'Noto Sans', 'Noto Sans KR', 'Noto Sans JP', sans-serif;
+      background-color: #FFFFFF;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      width: 100%;
+    }
+
+    /* Noto Sans */
+    @font-face {
+      font-family: 'Noto Sans';
+      src: url('assets/assets/fonts/NotoSans-Regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Noto Sans';
+      src: url('assets/assets/fonts/NotoSans-Medium.ttf') format('truetype');
+      font-weight: 500;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Noto Sans';
+      src: url('assets/assets/fonts/NotoSans-Bold.ttf') format('truetype');
+      font-weight: 700;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Noto Sans';
+      src: url('assets/assets/fonts/NotoSans-Italic.ttf') format('truetype');
+      font-weight: 400;
+      font-style: italic;
+    }
+    @font-face {
+      font-family: 'Noto Sans';
+      src: url('assets/assets/fonts/NotoSans-Light.ttf') format('truetype');
+      font-weight: 300;
+      font-style: normal;
+    }
+
+    /* Noto Sans KR */
+    @font-face {
+      font-family: 'Noto Sans KR';
+      src: url('assets/assets/fonts/NotoSansKR-Regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Noto Sans KR';
+      src: url('assets/assets/fonts/NotoSansKR-Medium.ttf') format('truetype');
+      font-weight: 500;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Noto Sans KR';
+      src: url('assets/assets/fonts/NotoSansKR-Bold.ttf') format('truetype');
+      font-weight: 700;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Noto Sans KR';
+      src: url('assets/assets/fonts/NotoSansKR-Light.ttf') format('truetype');
+      font-weight: 300;
+      font-style: normal;
+    }
+
+    /* Noto Sans JP */
+    @font-face {
+      font-family: 'Noto Sans JP';
+      src: url('assets/assets/fonts/NotoSansJP-Regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Noto Sans JP';
+      src: url('assets/assets/fonts/NotoSansJP-Medium.ttf') format('truetype');
+      font-weight: 500;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Noto Sans JP';
+      src: url('assets/assets/fonts/NotoSansJP-Bold.ttf') format('truetype');
+      font-weight: 700;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Noto Sans JP';
+      src: url('assets/assets/fonts/NotoSansJP-Light.ttf') format('truetype');
+      font-weight: 300;
+      font-style: normal;
+    }
+  </style>
+</head>
+<body>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
