@@ -199,9 +199,10 @@
     }
   </style>
   
-  <!-- GitHub Pages SPA 리다이렉트 스크립트 -->
+  <!-- GitHub Pages SPA 리다이렉트 수신 스크립트 (반드시 head에 위치) -->
+  <!-- 참조: https://github.com/rafgraph/spa-github-pages -->
   <script type="text/javascript">
-    // 404 페이지에서 리다이렉트된 경우 처리
+    // 404.html에서 리다이렉트된 경우 URL 복원
     (function(l) {
       if (l.search[1] === '/' ) {
         var decoded = l.search.slice(1).split('&').map(function(s) { 
@@ -215,18 +216,6 @@
   </script>
 </head>
 <body>
-  <!-- GitHub Pages SPA 404 리다이렉트 스크립트 -->
-  <script type="text/javascript">
-    // 404 에러 시 현재 URL을 sessionStorage에 저장
-    (function(){
-      var l = window.location;
-      if (l.protocol == 'file:') return;
-      var redirect = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        l.pathname + (l.search ? '?' + l.search : '') + l.hash;
-      sessionStorage.redirect = redirect;
-    })();
-  </script>
-  
   <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
