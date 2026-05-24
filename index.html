@@ -32,8 +32,8 @@
   <meta property="og:title" content="Timeboxer - Smart Timebox Planner & Time Management App">
   <meta property="og:description" content="Master your time with Timeboxer's intelligent timeboxing system. The productivity app that helps you plan, focus, and achieve more using Harvard's proven time management method.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://timeboxer.app">
-  <meta property="og:image" content="https://timeboxer.app/assets/assets/images/timeboxer_logo_v2.png">
+  <meta property="og:url" content="https://timeboxerweb.vercel.app">
+  <meta property="og:image" content="https://timeboxerweb.vercel.app/assets/assets/images/timeboxer_logo_v2.png">
   <meta property="og:image:alt" content="Timeboxer - Smart Timebox Planner Logo">
   <meta property="og:site_name" content="Timeboxer">
   <meta property="og:locale" content="en_US">
@@ -42,7 +42,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Timeboxer - Smart Timebox Planner & Time Management App">
   <meta name="twitter:description" content="Master your time with Timeboxer's intelligent timeboxing system. The productivity app that helps you plan, focus, and achieve more.">
-  <meta name="twitter:image" content="https://timeboxer.app/assets/assets/images/timeboxer_logo_v2.png">
+  <meta name="twitter:image" content="https://timeboxerweb.vercel.app/assets/assets/images/timeboxer_logo_v2.png">
   <meta name="twitter:image:alt" content="Timeboxer - Smart Timebox Planner Logo">
   
   <!-- Additional SEO Meta Tags -->
@@ -195,13 +195,17 @@
     }
   </style>
   
-  <!-- GitHub Pages SPA 리다이렉트 수신 스크립트 (반드시 head에 위치) -->
-  <!-- 참조: https://github.com/rafgraph/spa-github-pages -->
+  <!-- SPA 폴백 URL 복원 스크립트 (404.html 폴백 호스팅 대비, head 에 위치해야 함). -->
+  <!--
+    현재 운영 호스트(Vercel)는 vercel.json 의 rewrites 로 SPA 라우팅을 처리하므로
+    아래 스크립트는 실행되지 않는 no-op 입니다. 다른 정적 호스팅(GitHub Pages 등)으로
+    전환했을 때 web/404.html 폴백이 동작하도록 함께 두는 안전망입니다.
+    참조: https://github.com/rafgraph/spa-github-pages
+  -->
   <script type="text/javascript">
-    // 404.html에서 리다이렉트된 경우 URL 복원
     (function(l) {
       if (l.search[1] === '/' ) {
-        var decoded = l.search.slice(1).split('&').map(function(s) { 
+        var decoded = l.search.slice(1).split('&').map(function(s) {
           return s.replace(/~and~/g, '&')
         }).join('?');
         window.history.replaceState(null, null,

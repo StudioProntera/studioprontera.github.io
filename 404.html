@@ -4,11 +4,13 @@
     <meta charset="utf-8">
     <title>404 Not Found - Timeboxer</title>
     <script type="text/javascript">
-      // GitHub Pages SPA 리다이렉트
+      // 이 파일은 GitHub Pages(또는 비슷한 정적 호스팅) SPA 리다이렉트용 폴백입니다.
+      // 현재 운영 호스트(Vercel)는 vercel.json 의 rewrites 가 SPA 라우팅을 처리하므로
+      // 이 파일은 사용되지 않습니다. 다른 호스팅으로 이전 시 활용 가능.
       // 참조: https://github.com/rafgraph/spa-github-pages
-      
-      // studioprontera.github.io 형태이므로 pathSegmentsToKeep = 0
-      // 만약 studioprontera.github.io/timeboxer 형태면 pathSegmentsToKeep = 1
+      //
+      // username.github.io 루트 호스팅 형태이면 pathSegmentsToKeep = 0
+      // username.github.io/repo 형태이면 pathSegmentsToKeep = 1
       var pathSegmentsToKeep = 0;
 
       var l = window.location;
